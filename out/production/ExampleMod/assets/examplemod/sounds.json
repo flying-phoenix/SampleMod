@@ -1,0 +1,11 @@
+{
+  "heal": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "heal",
+        "stream": false
+      }
+    ]
+  }
+}

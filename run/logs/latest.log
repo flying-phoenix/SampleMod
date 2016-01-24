@@ -1,0 +1,56 @@
+[16:06:42] [main/INFO]: Setting user: Player75
+[16:06:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:06:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Example Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[16:06:52] [Sound Library Loader/INFO]: Sound engine started
+[16:06:53] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[16:06:53] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[16:06:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Example Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[16:06:55] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[16:06:55] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[16:06:56] [Sound Library Loader/INFO]: Sound engine started
+[16:07:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:07:08] [Server thread/INFO]: Generating keypair
+[16:07:08] [Server thread/INFO]: Converting map!
+[16:07:08] [Server thread/INFO]: Scanning folders...
+[16:07:08] [Server thread/INFO]: Total conversion count is 0
+[16:07:09] [Server thread/INFO]: Preparing start region for level 0
+[16:07:10] [Server thread/INFO]: Preparing spawn area: 13%
+[16:07:11] [Server thread/INFO]: Preparing spawn area: 31%
+[16:07:12] [Server thread/INFO]: Preparing spawn area: 50%
+[16:07:13] [Server thread/INFO]: Preparing spawn area: 66%
+[16:07:14] [Server thread/INFO]: Preparing spawn area: 89%
+[16:07:14] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:07:15] [Server thread/INFO]: Player75[local:E:dce3aa6d] logged in with entity id 296 at (-59.5, 66.0, 257.5)
+[16:07:15] [Server thread/INFO]: Player75 joined the game
+[16:07:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 103 ms
+[16:07:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 342 ms
+[16:07:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 194 ms
+[16:07:27] [Server thread/INFO]: Player75 has just earned the achievement [Taking Inventory]
+[16:07:27] [Client thread/INFO]: [CHAT] Player75 has just earned the achievement [Taking Inventory]
+[16:07:37] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking player
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+Caused by: java.lang.NullPointerException
+	at com.tan90.examplemod.inventory.ContainerMagmaWelder.canInteractWith(ContainerMagmaWelder.java:21) ~[ContainerMagmaWelder.class:?]
+	at net.minecraftforge.event.entity.player.PlayerOpenContainerEvent.<init>(PlayerOpenContainerEvent.java:27) ~[PlayerOpenContainerEvent.class:?]
+	at net.minecraftforge.common.ForgeHooks.canInteractWith(ForgeHooks.java:437) ~[ForgeHooks.class:?]
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:329) ~[EntityPlayer.class:?]
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:330) ~[EntityPlayerMP.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayer(NetHandlerPlayServer.java:329) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:37) ~[C03PacketPlayer.class:?]
+	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:111) ~[C03PacketPlayer.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
+	... 5 more
+[16:07:37] [Server thread/ERROR]: This crash report has been saved to: D:\Jogos\Minecraft\Modding\Source\ExampleMod\run\.\crash-reports\crash-2015-08-21_16.07.37-server.txt
+[16:07:37] [Server thread/INFO]: Stopping server
+[16:07:37] [Server thread/INFO]: Saving players
+[16:07:37] [Server thread/INFO]: Saving worlds
+[16:07:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:07:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:07:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End

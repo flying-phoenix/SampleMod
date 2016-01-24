@@ -1,0 +1,21 @@
+[
+{
+  "modid": "ExampleMod",
+  "name": "Example Mod",
+  "description": "I'll learn this somehow",
+  "version": "ALPHA 1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "tan90"
+  ],
+  "credits": "Textures took from EE3 and Botania",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 24/07/15 13:13
+Description: Ticking block entity
+
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Lnet.minecraft.item.ItemStack;
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.handleInventory(TileEntityModularStorage.java:92)
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.updateMultiblock(TileEntityModularStorage.java:145)
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.updateEntity(TileEntityModularStorage.java:103)
+	at net.minecraft.world.World.updateEntities(World.java:2160)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2097)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.handleInventory(TileEntityModularStorage.java:92)
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.updateMultiblock(TileEntityModularStorage.java:145)
+	at com.tan90.examplemod.tileentity.TileEntityModularStorage.updateEntity(TileEntityModularStorage.java:103)
+
+-- Block entity being ticked --
+Details:
+	Name: examplemod:teModularStorage // com.tan90.examplemod.tileentity.TileEntityModularStorage
+	Block type: ID #206 (tile.examplemod:modularStorageBlock // com.tan90.examplemod.block.BlockTileEntityModularStorage)
+	Block data value: 1 / 0x1 / 0b0001
+	Block location: World: (-597,4,656), Chunk: (at 11,0,0 in -38,41; contains blocks -608,0,656 to -593,255,671), Region: (-2,1; contains chunks -64,32 to -33,63, blocks -1024,0,512 to -513,255,1023)
+	Actual block type: ID #206 (tile.examplemod:modularStorageBlock // com.tan90.examplemod.block.BlockTileEntityModularStorage)
+	Actual block data value: 1 / 0x1 / 0b0001
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2160)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player123'/224, l='MpServer', x=-596,57, y=5,54, z=654,22]]
+	Chunk stats: MultiplayerChunkCache: 614, 614
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-579,4,653), Chunk: (at 13,0,13 in -37,40; contains blocks -592,0,640 to -577,255,655), Region: (-2,1; contains chunks -64,32 to -33,63, blocks -1024,0,512 to -513,255,1023)
+	Level time: 17479 game time, 80906 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 70 total; [EntitySheep['Sheep'/149, l='MpServer', x=-539,34, y=4,00, z=579,81], EntitySheep['Sheep'/150, l='MpServer', x=-531,94, y=4,00, z=626,03], EntitySheep['Sheep'/23, l='MpServer', x=-672,78, y=4,00, z=683,16], EntityChicken['Chicken'/152, l='MpServer', x=-539,47, y=4,00, z=676,53], EntityCow['Cow'/153, l='MpServer', x=-534,15, y=4,00, z=690,50], EntityCow['Cow'/25, l='MpServer', x=-672,88, y=4,00, z=732,97], EntityCow['Cow'/154, l='MpServer', x=-528,81, y=4,00, z=682,81], EntityChicken['Chicken'/26, l='MpServer', x=-674,53, y=4,00, z=733,53], EntityItem['item.item.egg'/155, l='MpServer', x=-539,84, y=4,13, z=677,53], EntityChicken['Chicken'/156, l='MpServer', x=-535,44, y=4,00, z=698,41], EntitySheep['Sheep'/28, l='MpServer', x=-666,06, y=4,00, z=600,97], EntitySheep['Sheep'/157, l='MpServer', x=-525,16, y=4,00, z=694,75], EntitySheep['Sheep'/29, l='MpServer', x=-667,97, y=4,00, z=679,91], EntityItem['item.item.egg'/158, l='MpServer', x=-535,03, y=4,13, z=696,31], EntityCow['Cow'/30, l='MpServer', x=-661,66, y=4,00, z=693,22], EntityChicken['Chicken'/159, l='MpServer', x=-531,47, y=4,00, z=704,47], EntityCow['Cow'/31, l='MpServer', x=-663,39, y=4,00, z=700,01], EntitySheep['Sheep'/160, l='MpServer', x=-530,91, y=4,00, z=714,94], EntityCow['Cow'/32, l='MpServer', x=-668,81, y=4,00, z=699,94], EntitySheep['Sheep'/33, l='MpServer', x=-664,94, y=4,00, z=703,97], EntitySheep['Sheep'/34, l='MpServer', x=-659,33, y=4,00, z=702,19], EntitySheep['Sheep'/35, l='MpServer', x=-665,50, y=4,00, z=701,34], EntitySheep['Sheep'/36, l='MpServer', x=-666,72, y=4,00, z=697,38], EntityHorse['Horse'/37, l='MpServer', x=-669,53, y=4,00, z=728,09], EntityHorse['Horse'/38, l='MpServer', x=-663,01, y=4,00, z=728,49], EntityChicken['Chicken'/39, l='MpServer', x=-655,75, y=4,00, z=730,01], EntityCow['Cow'/40, l='MpServer', x=-665,25, y=4,00, z=734,31], EntityCow['Cow'/41, l='MpServer', x=-665,35, y=4,00, z=726,32], EntityPig['Pig'/178, l='MpServer', x=-523,94, y=4,00, z=621,19], EntityPig['Pig'/53, l='MpServer', x=-646,91, y=4,00, z=600,66], EntityChicken['Chicken'/54, l='MpServer', x=-642,19, y=4,00, z=606,47], EntityCow['Cow'/55, l='MpServer', x=-655,44, y=4,00, z=597,91], EntitySheep['Sheep'/56, l='MpServer', x=-646,81, y=4,00, z=605,78], EntityChicken['Chicken'/184, l='MpServer', x=-527,44, y=4,00, z=652,63], EntityCow['Cow'/57, l='MpServer', x=-654,81, y=4,00, z=613,91], EntitySheep['Sheep'/58, l='MpServer', x=-641,50, y=4,00, z=615,81], EntitySheep['Sheep'/59, l='MpServer', x=-642,31, y=4,00, z=618,91], EntitySheep['Sheep'/60, l='MpServer', x=-649,42, y=4,00, z=624,99], EntitySheep['Sheep'/61, l='MpServer', x=-643,50, y=4,00, z=618,22], EntityChicken['Chicken'/189, l='MpServer', x=-522,56, y=4,00, z=694,44], EntitySheep['Sheep'/62, l='MpServer', x=-640,50, y=4,00, z=611,94], EntitySheep['Sheep'/63, l='MpServer', x=-642,06, y=4,00, z=611,13], EntityPig['Pig'/64, l='MpServer', x=-645,84, y=4,00, z=610,50], EntitySheep['Sheep'/65, l='MpServer', x=-645,09, y=4,00, z=608,84], EntitySheep['Sheep'/66, l='MpServer', x=-650,94, y=4,00, z=609,13], EntityPig['Pig'/67, l='MpServer', x=-645,75, y=4,00, z=614,53], EntityCow['Cow'/68, l='MpServer', x=-653,72, y=4,00, z=629,81], EntityChicken['Chicken'/69, l='MpServer', x=-640,41, y=4,00, z=654,59], EntitySheep['Sheep'/70, l='MpServer', x=-640,50, y=4,00, z=662,81], EntitySheep['Sheep'/71, l='MpServer', x=-641,75, y=4,00, z=657,59], EntitySheep['Sheep'/72, l='MpServer', x=-652,85, y=4,00, z=683,96], EntityCow['Cow'/73, l='MpServer', x=-651,22, y=4,00, z=706,31], EntitySheep['Sheep'/81, l='MpServer', x=-639,22, y=4,00, z=590,69], EntityChicken['Chicken'/82, l='MpServer', x=-631,38, y=4,00, z=611,63], EntityCow['Cow'/83, l='MpServer', x=-636,19, y=4,00, z=611,31], EntitySheep['Sheep'/84, l='MpServer', x=-630,31, y=4,00, z=615,06], EntityChicken['Chicken'/85, l='MpServer', x=-634,47, y=4,00, z=632,53], EntityItem['item.item.egg'/86, l='MpServer', x=-634,56, y=4,13, z=634,03], EntitySheep['Sheep'/87, l='MpServer', x=-638,78, y=4,00, z=645,59], EntitySheep['Sheep'/88, l='MpServer', x=-637,78, y=4,00, z=648,38], EntitySheep['Sheep'/89, l='MpServer', x=-629,50, y=4,00, z=666,81], EntityChicken['Chicken'/90, l='MpServer', x=-638,94, y=4,00, z=658,81], EntitySheep['Sheep'/91, l='MpServer', x=-638,28, y=4,00, z=663,88], EntityChicken['Chicken'/92, l='MpServer', x=-633,38, y=4,00, z=658,41], EntityItem['item.item.egg'/93, l='MpServer', x=-631,38, y=4,13, z=658,44], EntitySheep['Sheep'/94, l='MpServer', x=-630,81, y=4,00, z=670,63], EntitySheep['Sheep'/101, l='MpServer', x=-612,16, y=4,00, z=654,22], EntityItem['item.item.ItemWispEssence'/118, l='MpServer', x=-596,25, y=4,13, z=611,47], EntityItem['item.item.ItemWispEssence'/119, l='MpServer', x=-594,72, y=4,13, z=613,81], EntityClientPlayerMP['Player123'/224, l='MpServer', x=-596,57, y=5,54, z=654,22]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_11, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 608221232 bytes (580 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.3.1408 9 mods loaded, 9 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.3.1408-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.3.1408} [Minecraft Forge] (forgeSrc-1.7.10-10.13.3.1408-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.5.111} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.111-dev.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.7.46} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Baubles{1.0.1.8} [Baubles] (Baubles-deobf-1.7.10-1.0.1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Thaumcraft{4.2.1.0} [Thaumcraft] (Thaumcraft-1.7.10-4.2.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExampleMod{ALPHA 1.0} [Example Mod] (ExampleMod) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Waila{1.5.10} [Waila] (Waila-1.5.10_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.4.0' Renderer: 'GeForce GTX 650 Ti BOOST/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 650 Ti BOOST/PCIe/SSE2 GL version 4.4.0, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

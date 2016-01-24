@@ -1,0 +1,104 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 21/07/15 13:31
+Description: Rendering screen
+
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at com.tan90.examplemod.tileentity.TileEntityMine.getStackInSlot(TileEntityMine.java:126)
+	at net.minecraft.inventory.Slot.getStack(Slot.java:88)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:219)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:114)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.tan90.examplemod.tileentity.TileEntityMine.getStackInSlot(TileEntityMine.java:126)
+	at net.minecraft.inventory.Slot.getStack(Slot.java:88)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:219)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:114)
+
+-- Screen render details --
+Details:
+	Screen name: com.tan90.examplemod.client.gui.GuiMine
+	Mouse location: Scaled: (236, 250). Absolute: (472, 501)
+	Screen size: Scaled: (472, 501). Absolute: (944, 1002). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player273'/151, l='MpServer', x=-589,95, y=5,62, z=343,47]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-636,4,335), Chunk: (at 4,0,15 in -40,20; contains blocks -640,0,320 to -625,255,335), Region: (-2,0; contains chunks -64,0 to -33,31, blocks -1024,0,0 to -513,255,511)
+	Level time: 21841 game time, 21841 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 41 total; [EntityBat['Bat'/120850, l='MpServer', x=-580,25, y=4,46, z=322,90], EntityBat['Bat'/63385, l='MpServer', x=-555,78, y=4,50, z=281,75], EntityChicken['Chicken'/29, l='MpServer', x=-668,56, y=4,00, z=394,59], EntityBat['Bat'/166818, l='MpServer', x=-527,72, y=5,92, z=420,28], EntityClientPlayerMP['Player273'/151, l='MpServer', x=-589,95, y=5,62, z=343,47], EntityBat['Bat'/203044, l='MpServer', x=-587,84, y=5,06, z=367,24], EntityBat['Bat'/213673, l='MpServer', x=-555,97, y=11,86, z=405,61], EntityBat['Bat'/54, l='MpServer', x=-531,47, y=9,20, z=356,84], EntitySheep['Sheep'/62, l='MpServer', x=-626,06, y=4,00, z=350,03], EntityChicken['Chicken'/63, l='MpServer', x=-625,47, y=4,00, z=367,47], EntityChicken['Chicken'/64, l='MpServer', x=-625,44, y=4,00, z=352,44], EntityItem['item.item.egg'/65, l='MpServer', x=-624,22, y=4,13, z=352,06], EntityChicken['Chicken'/78, l='MpServer', x=-610,53, y=4,00, z=316,53], EntityItem['item.item.egg'/79, l='MpServer', x=-611,34, y=4,13, z=317,97], EntityChicken['Chicken'/80, l='MpServer', x=-611,44, y=4,00, z=380,41], EntityChicken['Chicken'/81, l='MpServer', x=-618,56, y=4,00, z=376,41], EntityChicken['Chicken'/82, l='MpServer', x=-616,38, y=4,00, z=375,38], EntityChicken['Chicken'/83, l='MpServer', x=-608,69, y=4,00, z=370,63], EntitySheep['Sheep'/84, l='MpServer', x=-609,28, y=4,00, z=375,22], EntitySheep['Sheep'/85, l='MpServer', x=-606,25, y=4,00, z=372,38], EntityChicken['Chicken'/86, l='MpServer', x=-611,22, y=4,00, z=371,75], EntityChicken['Chicken'/87, l='MpServer', x=-621,47, y=4,00, z=376,41], EntityBat['Bat'/137173, l='MpServer', x=-530,00, y=7,89, z=265,41], EntityChicken['Chicken'/91, l='MpServer', x=-600,47, y=4,00, z=311,56], EntitySheep['Sheep'/92, l='MpServer', x=-597,66, y=4,00, z=376,22], EntitySheep['Sheep'/93, l='MpServer', x=-598,91, y=4,00, z=376,34], EntityPig['Pig'/94, l='MpServer', x=-606,25, y=4,00, z=422,50], EntityBat['Bat'/216540, l='MpServer', x=-653,16, y=9,42, z=308,60], EntityChicken['Chicken'/99, l='MpServer', x=-598,25, y=4,00, z=419,94], EntityChicken['Chicken'/100, l='MpServer', x=-597,56, y=4,00, z=417,59], EntityPig['Pig'/103, l='MpServer', x=-582,16, y=4,00, z=374,97], EntityBat['Bat'/222692, l='MpServer', x=-523,06, y=4,89, z=364,22], EntityPig['Pig'/104, l='MpServer', x=-583,38, y=4,00, z=375,19], EntityChicken['Chicken'/105, l='MpServer', x=-587,84, y=4,00, z=377,97], EntitySheep['Sheep'/106, l='MpServer', x=-584,81, y=4,00, z=380,91], EntitySheep['Sheep'/107, l='MpServer', x=-580,31, y=4,00, z=375,84], EntityBat['Bat'/205928, l='MpServer', x=-608,89, y=8,31, z=279,91], EntitySheep['Sheep'/108, l='MpServer', x=-576,22, y=4,00, z=376,19], EntityChicken['Chicken'/109, l='MpServer', x=-585,53, y=4,00, z=378,44], EntityPig['Pig'/112, l='MpServer', x=-567,22, y=4,00, z=367,63], EntityPig['Pig'/113, l='MpServer', x=-572,78, y=4,00, z=384,91]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_11, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 842871136 bytes (803 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.3.1408 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.3.1408-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.3.1408} [Minecraft Forge] (forgeSrc-1.7.10-10.13.3.1408-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExampleMod{ALPHA 1.0} [Example Mod] (ExampleMod) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.4.0' Renderer: 'GeForce GTX 650 Ti BOOST/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 650 Ti BOOST/PCIe/SSE2 GL version 4.4.0, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

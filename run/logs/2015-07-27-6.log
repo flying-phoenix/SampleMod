@@ -1,0 +1,20 @@
+[22:05:26] [main/INFO]: Setting user: Player429
+[22:05:28] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:05:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Example Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[22:05:37] [Sound Library Loader/INFO]: Sound engine started
+[22:05:38] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[22:05:38] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:05:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Example Mod, FMLFileResourcePack:Waila, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[22:05:40] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[22:05:40] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:05:41] [Sound Library Loader/INFO]: Sound engine started
+[22:05:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:05:44] [Server thread/INFO]: Generating keypair
+[22:05:45] [Server thread/INFO]: Preparing start region for level 0
+[22:05:45] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:05:46] [Server thread/INFO]: Player429[local:E:c04136b2] logged in with entity id 182 at (-169.89058096567211, 6.462381371279929, -772.3697561287696)
+[22:05:46] [Server thread/INFO]: Player429 joined the game
+[22:05:56] [Server thread/INFO]: Saving and pausing game...
+[22:05:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:05:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:05:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End

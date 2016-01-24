@@ -1,0 +1,37 @@
+# Creative Tabs
+itemGroup.examplemod=Example Mod
+
+#Blocks
+tile.examplemod:ashBlock.name=Ash Block
+tile.examplemod:mineBlock.name=Mine
+tile.examplemod:modularStorageBlock.name=Modular Storage Crate
+tile.examplemod:treeFarmBlock.name=Tree Farm
+tile.examplemod:machineBlock.name=VSWE's Machine
+tile.examplemod:magmaWelderBlock.name=Magma Welder
+
+#Items
+item.examplemod:watchItem.name=Watch
+item.examplemod:droidItem.name=Droid
+item.examplemod:cardBase.Box.name=Box Card
+item.examplemod:cardBase.Cross.name=Cross Card
+item.examplemod:cardBase.Square.name=Square Card
+item.examplemod:cardBase.Custom.name=Custom Card
+item.examplemod:backpack.name=Backpack
+
+#Keys
+keys.examplemod.category=Example Mod
+keys.examplemod.explode=Explode
+keys.examplemod.bigexplode=Explode Big
+
+#Guis
+gui.examplemod.mine.timer=Timer: %s s
+gui.examplemod.backpack=Backpack
+
+#Gui Buttons
+gui.examplemod.mine.button.reset=Reset
+gui.examplemod.mine.button.restart=Restart
+
+#Waila
+waila.examplemod.minetimer=Mine Timer: %d s
+waila.examplemod.minetarget=Mine Target: %s
+waila.examplemod.mineowner=Mine Owner: %s
